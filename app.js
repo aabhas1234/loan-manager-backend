@@ -29,7 +29,7 @@ app.get('/api/getloanentries',getloanentries);
 app.post('/api/signin',signin );
 
 app.post('/api/signup',signup);
-
-app.listen(process.env.port,()=>{
-    console.log("app is successfully running ");
+const PORT=process.env.port|| 10000
+app.listen(PORT,"0.0.0.0",()=>{
+    console.log(`app is successfully running, on ${PORT} `);
 })
