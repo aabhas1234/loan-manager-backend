@@ -24,7 +24,7 @@ catch(error)
 
 app.post("/api/createloanentry",createloanentry);
 
-app.get('/api/getloanentries',getloanentries);
+app.get('/api/getloanentriess',getloanentries);
 
 app.post('/api/signin',signin );
 
