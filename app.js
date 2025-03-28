@@ -21,6 +21,7 @@ catch(error)
 {
     console.log("oops, error in the connection");
 }
+app.get("/api/health",(req,res)=>{res.status(200).send("Ping Successfull")});
 
 app.post("/api/createloanentry",createloanentry);
 
